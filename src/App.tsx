@@ -8,13 +8,9 @@ interface Message {
   content: string;
 }
 
-interface AgentResponse {
-  text: string;
-}
-
 // 初始化Mastra客户端
 const client = new MastraClient({
-  baseUrl: process.env.REACT_APP_MASTRA_URL || 'http://localhost:4111',
+  baseUrl: 'https://lewis-mastra-server.lewis-mastar-server.workers.dev',
 });
 
 // 聊天界面组件
